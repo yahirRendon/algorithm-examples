@@ -52,8 +52,22 @@ void setup() {
  DRAW FUNCTION
  **************************************************************/
 void draw() {
-  background(0, 0, 100);
+  background(255);
   bresenhamLine(p1x, p1y, p2x, p2y);
+}
+
+/**************************************************************
+ KEY PRESSED FUNCTION
+ 
+ - SPACE | set new points
+ **************************************************************/
+void keyPressed() {
+  if(key == ' ') {
+    p1x = int(random(100, width - 100));
+    p1y = int(random(100, width - 100));
+    p2x = int(random(100, height - 100));
+    p2y = int(random(100, height - 100));
+  }
 }
 ```
 
