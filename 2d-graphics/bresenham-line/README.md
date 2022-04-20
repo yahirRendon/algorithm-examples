@@ -21,12 +21,6 @@ To better understand how the algorithm works and how I can modify it to use with
  
  Notes:
  - Processing 3.5.4
- 
- Instructions:
- 1. SPACE KEY to start and pause game
- 2. Use arrow keys to move and rotate tromino
- 3. N KEY to start new game
- 
  **************************************************************/
  
 int p1x;      // point 1 x
