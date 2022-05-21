@@ -1,10 +1,10 @@
 
 /**************************************************************
  Project:  Playground for exploring Bresenham's line algorithm
- Date:     April 20, 2022
+ Date:     May 20, 2022
  
  Notes:
-           This used a functio that returns an array list of
+           This uses a function that returns an array list of
            PVector points that can be looped through to actually
            draw the line
  - Processing 3.5.4
