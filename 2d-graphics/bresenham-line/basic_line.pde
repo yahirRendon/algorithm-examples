@@ -13,7 +13,7 @@ void bresenhamLine(int _x1, int _y1, int _x2, int _y2) {
   int x2 = _x2;
   int y2 = _y2;
 
-  // delta of exact value and rounded value of the dependent variable
+  // dif of exact value and rounded value 
   int d = 0;
 
   // changes in x and y between points 1 and 2
@@ -25,16 +25,22 @@ void bresenhamLine(int _x1, int _y1, int _x2, int _y2) {
   int dy2 = 2 * dy; 
 
   // set increment value for x and y direction 
-  int ix = x1 < x2 ? 1 : -1; 
-  int iy = y1 < y2 ? 1 : -1;
+  // 1 is solid line. as you increase you cna create dotted
+  // or dashed lines
+  int incx = 1;
+  int incy = 1;
+  int ix = x1 < x2 ? incx : -incx; 
+  int iy = y1 < y2 ? incy : -incy;
 
   // set x and y to point 1
   int x = x1;
   int y = y1;
-
+  
+  // set direction
   if (dx >= dy) {
     while (true) {
-      // draw point if not at x2
+      // draw point and only break
+      // if x1 is at end x2
       point(x, y);                
       if (x == x2)            
         break;
