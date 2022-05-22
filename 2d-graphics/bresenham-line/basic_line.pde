@@ -1,3 +1,55 @@
+/**************************************************************
+ Project:  Playground for exploring Bresenham's line algorithm
+ Date:     April 20, 2022
+ 
+ Notes:
+           This uses a function to draw a 1 pixel width line
+           
+ - Processing 3.5.4
+ **************************************************************/
+ 
+int p1x;      // point 1 x
+int p1y;      // point 1 y
+int p2x;      // point 2 x
+int p2y;      // point 2 y
+
+/**************************************************************
+ SET UP FUNCTION
+ **************************************************************/
+void setup() {
+  size(900, 900);
+  
+  // set random start and end point values of line
+  p1x = int(random(100, width - 100));
+  p1y = int(random(100, width - 100));
+  p2x = int(random(100, height - 100));
+  p2y = int(random(100, height - 100));
+}
+
+/**************************************************************
+ DRAW FUNCTION
+ **************************************************************/
+void draw() {
+  background(255);
+  
+  bresenhamLine(p1x, p1y, p2x, p2y);
+}
+
+
+/**************************************************************
+ KEY PRESSED FUNCTION
+ 
+ - SPACE | set new points
+ **************************************************************/
+void keyPressed() {
+  if(key == ' ') {
+    p1x = int(random(100, width - 100));
+    p1y = int(random(100, width - 100));
+    p2x = int(random(100, height - 100));
+    p2y = int(random(100, height - 100));
+  }
+}
+
 /**
  * Basics for drawing a line between two points using
  * Bresenham's algorithm with stroke of 1 pixel. 
