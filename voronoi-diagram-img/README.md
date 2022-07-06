@@ -13,7 +13,7 @@ This is a slight modification of my the Voronoi diagram basic in which an image 
 <p>- A visual of the layout.
 <br>- A function sets the position of the image according to the time to mimic sun rising and setting</p>
 <p align="center">
-  <img width="800" align="center" src="https://github.com/yahirRendon/algorithm-examples/blob/main/voronoi_diagram_img/data/vornoi-diagram-img-anim.gif" alt="animation page"/>
+  <img width="800" align="center" src="https://github.com/yahirRendon/algorithm-examples/blob/main/voronoi-diagram-img/data/voronoi-diagram-img-anim.gif" alt="animation page"/>
 </p>
 
 ##  Instructions
