@@ -10,8 +10,6 @@
 </p>
  
 ## Demo
-<p>- A visual of the layout.
-<br>- A function sets the position of the image according to the time to mimic sun rising and setting</p>
 <p align="center">
   <img width="400" align="center" src="https://github.com/yahirRendon/algorithm-examples/blob/main/aStarPathfinding/data/aStarPath_anim.gif" alt="animation"/>
 </p>
